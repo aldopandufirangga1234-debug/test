@@ -1,161 +1,18 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Undangan Pernikahan Alika & Andrian</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      background: url('bg.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-    }
-
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.55);
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    .cover {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      padding: 20px;
-    }
-
-    h2 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #ffefba;
-    }
-
-    p {
-      font-size: 0.95em;
-      color: #f8f8f8;
-      margin-bottom: 30px;
-    }
-
-    .photo {
-      width: 80%;
-      max-width: 320px;
-      border-radius: 20px;
-      margin: 15px auto;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    }
-
-    #nama-tamu {
-      font-weight: 600;
-      font-size: 1.1em;
-      color: #ffffff;
-      margin-top: 350px;
-    }
-
-    button {
-      background: linear-gradient(45deg, #310035, #210004);
-      border: none;
-      color: #ffffff;
-      font-weight: 600;
-      padding: 12px 25px;
-      margin-top: 30px;
-      border-radius: 50px;
-      cursor: pointer;
-      font-size: 1em;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-
-    button:hover {
-      transform: scale(1.05);
-    }
-
-    /* Musik tombol */
-    #musik-control {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #3b0c34;
-      color: #333;
-      border: none;
-      padding: 12px 16px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 18px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 10;
-    }
-
-    @media (max-width: 600px) {
-      h2 { font-size: 2em; }
-      .photo { width: 90%; }
-    }
-  </style>
+  <title>Document</title>
 </head>
-<body>
-  <div class="cover">
 
-    
+<body style="background-color: black;">
+  <table>
+    <tr>hallo</tr>
+    <tr>guys</tr>
+  </table>
 
-    <div id="nama-tamu">Tamu Undangan</div>
-
-    <br><br>
-    <button id="bukaUndangan"> Buka Undangan</button>
-  </div>
-
-  <!-- Musik -->
-  <audio id="musik" src="musik.mp3" preload="auto" loop></audio>
-  <button id="musik-control">🎵</button>
-
-  <script>
-    // Ambil parameter nama tamu dari URL
-    const params = new URLSearchParams(window.location.search);
-    const nama = params.get("kpd");
-    const namaTamu = document.getElementById("nama-tamu");
-    if (nama) {
-      namaTamu.textContent = `Kepada Yth. ${nama}`;
-    }
-
-    // Musik kontrol
-    const musik = document.getElementById("musik");
-    const tombolMusik = document.getElementById("musik-control");
-    let isPlaying = false;
-
-    tombolMusik.addEventListener("click", () => {
-      if (isPlaying) {
-        musik.pause();
-        tombolMusik.textContent = "🎵";
-      } else {
-        musik.play();
-        tombolMusik.textContent = "⏸️";
-      }
-      isPlaying = !isPlaying;
-    });
-
-    // Tombol Buka Undangan
-    document.getElementById("bukaUndangan").addEventListener("click", () => {
-      musik.play();
-      setTimeout(() => {
-        window.location.href = "https://preview.canva.site/e790da7c-6fbb-4a62-bd53-18e9f6c467ad/nikahan.xo.je/";
-      }, 1200);
-    });
-  </script>
 </body>
+
 </html>
