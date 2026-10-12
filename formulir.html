@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td>user name</td>
+                <td><input type="text" name="UsName" id="" placeholder="User name anda" pattern="[A-Za-z ]+"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pw" id="" placeholder="Masukan Password anda"
+                        pattern="[A-Za-z0-9]{6,10}"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><Textarea name="txtAlm" placeholder="Masukan alamat anda" rows="4"></Textarea></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="txt">Pria <input type="radio" name="txt" id="">Wanita</td>
+            </tr>
+            <tr>
+                <td>jurusan</td>
+                <td><select name="Txtjur" id="">
+                        <optgroup label="FTD">
+                            <option value="Ti">Teknik informatika</option>
+                            <option value="SK">Sistem Komputer</option>
+                        </optgroup>
+                        <optgroup label="FEB">
+                            <option value="AK">Akutansi</option>
+                            <option value="MAN">Manajeman</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal</td>
+                <td><input type="date" name="TxtDt" id=""></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit"> <input type="reset" value="Batal"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
